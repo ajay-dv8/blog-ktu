@@ -1,10 +1,11 @@
-
 import {visionTool} from '@sanity/vision'
 import {defineConfig} from 'sanity'
 import {deskTool} from 'sanity/desk'
 import { schemaTypes } from './schemas'
-import StudioNavbar from './components/StudioNavbar';
 import { myTheme } from './theme';
+
+import StudioNavbar from './components/StudioNavbar';
+import Logo from './components/Logo'
 
 //import { apiVersion, dataset, projectId } from './sanity/env';
 //import {schema} from './sanity/schema'
@@ -31,7 +32,7 @@ export default defineConfig({
   ],
   studio: {
     components: {
-      //logo: Logo,
+      logo: Logo,
       navbar: StudioNavbar,
     }
   },
