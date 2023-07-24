@@ -23,7 +23,9 @@ export default defineConfig({
   schema: {
     types: schemaTypes,
   },
-  plugins: [
+  plugins: [deskTool({
+    defaultDocumentNode:
+  }),
     deskTool(),
     // Vision is a tool that lets you query your content with GROQ in the studio
     // https://www.sanity.io/docs/the-vision-plugin
