@@ -12,13 +12,12 @@ type Base = {
 
 interface Post extends Base {
     author?: Author;
-    body?: Block[] | '' | any;
+    body?: Block[] | any;
     categories?: Category | '' | any;
     mainImage?: Image | '' | any;
     slug?: Slug;
     title?: string;
     description?: string;
-    
 }
 
 interface Author extends Base {

@@ -19,8 +19,14 @@ export const getDefaultDocumentNode: DefaultDocumentNodeResolver = (
 
               defaultSize: `desktop`,
 
-              
+              reload: {
+                button: true,
+              },
+
+              attributes: {},
+
             })
+            .title("Preview"),
         ])
     }
 }
